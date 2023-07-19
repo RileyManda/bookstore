@@ -1,18 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import Books from './Book';
+import Books from './Books';
 import Categories from './Categories';
 
 const routes = [
   {
     path: '/',
-    label: 'Book',
+    label: 'BOOKS',
     element: <Books />,
   },
   {
     path: '/categories',
-    label: 'Categories',
+    label: 'CATEGORIES',
     element: <Categories />,
   },
 ];
@@ -22,9 +22,10 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-left">
         <Logo />
-      </div>
-      <div className="navbar-right">
         <Nav routes={routes} />
+      </div>
+      <div className="user-icon">
+        <PersonIcon />
       </div>
     </nav>
   );
@@ -44,6 +45,10 @@ function Nav({ routes }) {
 
 function Logo() {
   return <div className="logo">Bookstore CMS</div>;
+}
+
+function PersonIcon() {
+  return <div className="person-icon">Person Icon</div>;
 }
 
 Nav.propTypes = {

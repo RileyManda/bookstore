@@ -9,11 +9,17 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        <Routes>
-          {routes.map((route) => (
-            <Route key={route.path} path={route.path} element={route.element} />
-          ))}
-        </Routes>
+        <div className="container">
+          <Routes>
+            {routes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
+          </Routes>
+        </div>
       </div>
     </Router>
   );

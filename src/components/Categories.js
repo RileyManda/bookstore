@@ -1,3 +1,7 @@
-const Categories = () => <h2>Book Categories</h2>;
+const Categories = () => (
+  <div className="categories">
+    <h2>Book Categories</h2>
+  </div>
+);
 
 export default Categories;
