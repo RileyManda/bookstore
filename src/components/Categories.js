@@ -1,4 +1,3 @@
-const Categories = () => <div>Book Categories</div>;
+const Categories = () => <h1>Book Categories</h1>;
 
 export default Categories;
-// TODO: create Books categories list

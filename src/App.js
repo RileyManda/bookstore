@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router, Link, Outlet,
+  BrowserRouter as Router, Link, Route, Routes,
 } from 'react-router-dom';
 import React from 'react';
 import './App.css';
@@ -11,7 +11,11 @@ function App() {
     <Router>
       <div className="App">
         <Nav routes={routes} />
-        <Outlet />
+        <Routes>
+          {routes.map((route) => (
+            <Route key={route.path} path={route.path} element={route.element} />
+          ))}
+        </Routes>
       </div>
     </Router>
   );

@@ -6,9 +6,10 @@ const routes = [
   {
     path: '/',
     element: <Books />,
-    children: [
-      { path: '/categories', element: <Categories /> },
-    ],
+  },
+  {
+    path: '/categories',
+    element: <Categories />,
   },
 ];
 
