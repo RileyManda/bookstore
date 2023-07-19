@@ -1,5 +1,5 @@
 import React from 'react';
-import Books from './components/Books';
+import Books from './components/Book';
 import Categories from './components/Categories';
 
 const routes = [

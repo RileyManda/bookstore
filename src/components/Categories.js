@@ -1,3 +1,3 @@
-const Categories = () => <h1>Book Categories</h1>;
+const Categories = () => <h2>Book Categories</h2>;
 
 export default Categories;
