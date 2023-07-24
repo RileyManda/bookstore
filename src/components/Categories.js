@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { showStatus } from '../redux/categories/categoriesSlice';
 
 const Categories = () => {
-  const dispatch = useDispatch(showStatus);
+  const dispatch = useDispatch();
   useEffect(() => {
     dispatch(showStatus());
   }, [dispatch]);

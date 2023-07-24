@@ -1,13 +1,31 @@
 import React from 'react';
-import bookData from './BookData';
+import { useSelector, useDispatch } from 'react-redux';
+import { removeBook } from '../redux/books/booksSlice';
 
-export default function Book() {
+export default function BooksComponent() {
+  const dispatch = useDispatch();
+  const books = useSelector((state) => state.books);
+
   return (
     <div>
-      {bookData.map((book) => (
-        <div key={book.id} className="book-item">
+      {books.map((book) => (
+        <div key={book.item_id} className="book-item">
           <h3 className="book-title">{book.title}</h3>
-          <button type="button" className="delete-button">
+          <p>
+            Author:
+            {' '}
+            {book.author}
+          </p>
+          <p>
+            Category:
+            {' '}
+            {book.category}
+          </p>
+          <button
+            type="button"
+            className="delete-button"
+            onClick={() => dispatch(removeBook(book.item_id))}
+          >
             Delete
           </button>
         </div>
