@@ -4,7 +4,9 @@ import RemoveBookButton from './RemoveBookButton';
 
 export default function BooksComponent() {
   const books = useSelector((state) => state.books);
-
+  if (!Array.isArray(books)) {
+    return <div>No books available</div>;
+  }
   return (
     <div className="Book">
       {books.map((book) => (

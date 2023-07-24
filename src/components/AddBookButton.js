@@ -16,6 +16,7 @@ const AddBookButton = ({ bookTitle, bookAuthor }) => {
 
     dispatch(addBook(newBook));
   };
+
   return (
     <div className="add-btn">
       <button type="button" onClick={handleAddBook}>
@@ -24,6 +25,7 @@ const AddBookButton = ({ bookTitle, bookAuthor }) => {
     </div>
   );
 };
+
 AddBookButton.propTypes = {
   bookTitle: PropTypes.string.isRequired,
   bookAuthor: PropTypes.string.isRequired,
