@@ -1,9 +1,8 @@
 import React from 'react';
-import { useSelector, useDispatch } from 'react-redux';
-import { removeBook } from '../redux/books/booksSlice';
+import { useSelector } from 'react-redux';
+import RemoveBookButton from './RemoveBookButton';
 
 export default function BooksComponent() {
-  const dispatch = useDispatch();
   const books = useSelector((state) => state.books);
 
   return (
@@ -21,13 +20,7 @@ export default function BooksComponent() {
             {' '}
             {book.category}
           </p>
-          <button
-            type="button"
-            className="delete-button"
-            onClick={() => dispatch(removeBook(book.item_id))}
-          >
-            Delete
-          </button>
+          <RemoveBookButton bookId={book.item_id} />
         </div>
       ))}
     </div>
