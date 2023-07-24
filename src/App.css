@@ -66,10 +66,6 @@
   margin-top: 20px;
 }
 
-.book-form {
-  margin-top: 20px;
-}
-
 .book-item {
   display: flex;
   align-items: center;
@@ -80,9 +76,26 @@
 .book-title {
   flex-grow: 1;
   text-align: left;
+  margin-right: 12px;
 }
 
-.delete-button {
+.form-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-right: 92px;
+}
+
+.author {
+  color: black;
+}
+
+.add-btn {
+  color: #fff;
+}
+
+.remove-btn {
   background-color: rgb(194, 190, 190);
   color: #fff;
 }
