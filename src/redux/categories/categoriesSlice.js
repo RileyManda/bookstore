@@ -6,12 +6,12 @@ const categoriesSlice = createSlice({
   name: 'categories',
   initialState,
   reducers: {
-    checkStatus: (state) => {
-      const showStatus = 'Under Construction';
-      state.push(showStatus);
+    showStatus: (state) => {
+      const displayStatus = 'Under Construction';
+      state.push(displayStatus);
     },
   },
 });
 
-export const { checkStatus } = categoriesSlice.actions;
+export const { showStatus } = categoriesSlice.actions;
 export default categoriesSlice.reducer;
