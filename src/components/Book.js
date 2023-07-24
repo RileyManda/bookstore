@@ -6,16 +6,16 @@ export default function BooksComponent() {
   const books = useSelector((state) => state.books);
 
   return (
-    <div>
+    <div className="Book">
       {books.map((book) => (
         <div key={book.item_id} className="book-item">
           <h3 className="book-title">{book.title}</h3>
-          <p>
+          <p className="Author">
             Author:
             {' '}
             {book.author}
           </p>
-          <p>
+          <p className="category">
             Category:
             {' '}
             {book.category}

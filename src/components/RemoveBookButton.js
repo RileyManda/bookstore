@@ -11,7 +11,7 @@ const RemoveBookButton = ({ bookId }) => {
   };
 
   return (
-    <div>
+    <div className="remove-btn">
       <button type="button" onClick={handleRemoveBook}>
         Remove Book
       </button>

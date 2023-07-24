@@ -17,7 +17,7 @@ const AddBookButton = ({ bookTitle, bookAuthor }) => {
     dispatch(addBook(newBook));
   };
   return (
-    <div>
+    <div className="add-btn">
       <button type="button" onClick={handleAddBook}>
         Add Book
       </button>

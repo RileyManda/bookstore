@@ -15,8 +15,6 @@ const BookForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Book Title:', bookTitle);
-    console.log('Book Author:', bookAuthor);
   };
 
   const authorOptions = [
@@ -27,8 +25,8 @@ const BookForm = () => {
   ];
 
   return (
-    <div className="book-form">
-      <form onSubmit={handleSubmit}>
+    <div className="form-wrapper">
+      <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
           placeholder="Book Title"
@@ -36,7 +34,7 @@ const BookForm = () => {
           onChange={handleChangeTitle}
         />
         <select value={bookAuthor} onChange={handleChangeAuthor}>
-          <option value="">Select Author</option>
+          <option value="">Action</option>
           {authorOptions.map((author) => (
             <option key={author} value={author}>
               {author}
