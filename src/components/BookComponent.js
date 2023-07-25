@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchBooks } from '../redux/books/booksSlice';
+import { fetchBooks } from '../api/middleware';
 import RemoveBookButton from './RemoveBookButton';
 
 const BooksComponent = () => {
