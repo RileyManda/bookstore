@@ -1,4 +1,5 @@
 import React from 'react';
+import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addBook } from '../redux/books/booksSlice';
@@ -7,9 +8,8 @@ const AddBookButton = ({ bookTitle, bookAuthor, bookCategory }) => {
   const dispatch = useDispatch();
 
   const handleAddBook = () => {
-    const id = Math.floor(Math.random() * 100);
     const newBook = {
-      item_id: Number(id),
+      item_id: uuidv4(),
       title: bookTitle,
       author: bookAuthor,
       category: bookCategory,

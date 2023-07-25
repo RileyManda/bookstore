@@ -18,12 +18,15 @@ const BookForm = () => {
   };
 
   // Default author value
-  const defaultAuthor = 'Default Author';
+  const defaultAuthor = 'Author';
 
   const categoryOptions = [
     'Category 1',
     'Category 2',
     'Category 3',
+    'Category 4',
+    'Category 5',
+    'Category 6',
   ];
 
   return (
