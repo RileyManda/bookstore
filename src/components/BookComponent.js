@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchBooks } from '../redux/books/booksSlice';
-import RemoveBookButton from './RemoveBookTest';
+import RemoveBookButton from './RemoveBookButton';
 
 const BooksComponent = () => {
   const dispatch = useDispatch();
@@ -16,10 +16,6 @@ const BooksComponent = () => {
     });
   }, [dispatch]);
 
-  // const handleRemoveBook = (bookId) => {
-  //   dispatch(removeBook(bookId));
-  // };
-
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -33,7 +29,6 @@ const BooksComponent = () => {
       {bookIds.map((bookId) => {
         const bookArray = books[bookId];
         if (!Array.isArray(bookArray) || bookArray.length === 0) {
-          // if bookArray is undefined or empty
           return null;
         }
         const book = bookArray[0];
