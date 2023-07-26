@@ -13,10 +13,12 @@ const RemoveBookButton = ({ bookId }) => {
   };
 
   return (
-    <div className="remove-btn">
+    <div className="action-button-group">
+      <button type="button">Comments</button>
       <button type="button" onClick={handleRemoveBook}>
         Remove Book
       </button>
+      <button type="button">Edit</button>
     </div>
   );
 };

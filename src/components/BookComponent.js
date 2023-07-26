@@ -42,27 +42,20 @@ const BooksComponent = () => {
               <p className="category">{bookItem.category}</p>
               <h3 className="book-title">{bookItem.title}</h3>
               <p className="author">{bookItem.author}</p>
-              <div className="app-actions-left">
-                {' '}
-                <p>Comments</p>
+              <div className="card-actions-left">
                 <RemoveBookButton bookId={bookId} />
-                <p>Edit</p>
-
               </div>
-
             </div>
-            <div className="app-actions-center">
+            <div className="card-actions-center">
               Progress dialog
             </div>
-            <div className="app-actions-right">
+            <div className="card-actions-right">
               <p>Current Chapter</p>
               <p>Chapter 17</p>
               <div className="progress-btn">
                 <button type="button">Update progress</button>
               </div>
-
             </div>
-
           </div>
         );
       })}

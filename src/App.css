@@ -5,6 +5,7 @@
   --nav-menu-theme: #121212;
   --background-color-theme: #fafafa;
   --author-color: #4386bf;
+  --dark-color-theme: #121212;
 }
 
 /* font */
@@ -196,7 +197,6 @@
   color: var(--author-color);
   align-items: center;
   margin-right: 12px;
-  
 }
 
 .category {
@@ -210,17 +210,9 @@
 }
 
 .remove-btn button {
-  width: 11.5rem;
-  height: 2.063rem;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-  border-radius: 3px;
+  background: none;
   border: none;
-  color: var(--white-background-theme);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  background-color: var(--blue-theme);
+  color: var(--dark-color-theme);
 }
 
 .progress-btn button {
@@ -237,16 +229,36 @@
   background-color: var(--blue-theme);
 }
 
-.app-actions-right {
+.card-actions-right {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 13px;
 }
 
-.app-actions-left {
+.card-actions-left {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  margin-right: 92px;
+}
+
+.action-button-group {
+  display: flex;
+  flex-direction: row;
+  background: none;
+  border: none;
+  color: var(--dark-color-theme);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  float: left;
+}
+
+.card-actions-center {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   margin-right: 92px;
 }
