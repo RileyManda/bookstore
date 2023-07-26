@@ -4,6 +4,7 @@
   --blue-theme: #0290ff;
   --nav-menu-theme: #121212;
   --background-color-theme: #fafafa;
+  --author-color: #4386bf;
 }
 
 /* font */
@@ -171,6 +172,16 @@
   flex-grow: 1;
   text-align: left;
   margin-right: 12px;
+  width: 12.313rem;
+  height: 1.813rem;
+  font-size: 1.375rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: var(--color-black);
+  align-items: center;
 }
 
 .form-wrapper {
@@ -182,9 +193,10 @@
 }
 
 .author {
-  color: var(--color-black);
+  color: var(--author-color);
   align-items: center;
   margin-right: 12px;
+  
 }
 
 .category {
@@ -200,7 +212,6 @@
 .remove-btn button {
   width: 11.5rem;
   height: 2.063rem;
-  margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   border: none;
@@ -215,7 +226,6 @@
 .progress-btn button {
   width: 11.5rem;
   height: 2.063rem;
-  margin: 0.75rem 0 0.563rem 3.688rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
   border: none;
@@ -231,6 +241,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
+  margin-right: 13px;
+}
+
+.app-actions-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   margin-right: 92px;
 }

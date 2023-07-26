@@ -38,17 +38,29 @@ const BooksComponent = () => {
         const bookItem = bookArray[0];
         return (
           <div key={bookItem.item_id || index} className="book-item">
-            <div className="app-actions-left">
+            <div className="card-left">
+              <p className="category">{bookItem.category}</p>
               <h3 className="book-title">{bookItem.title}</h3>
               <p className="author">{bookItem.author}</p>
-              <p className="category">{bookItem.category}</p>
-              <RemoveBookButton bookId={bookId} />
-            </div>
+              <div className="app-actions-left">
+                {' '}
+                <p>Comments</p>
+                <RemoveBookButton bookId={bookId} />
+                <p>Edit</p>
 
+              </div>
+
+            </div>
+            <div className="app-actions-center">
+              Progress dialog
+            </div>
             <div className="app-actions-right">
               <p>Current Chapter</p>
               <p>Chapter 17</p>
-              <button type="button" className="progress-btn">Update progress</button>
+              <div className="progress-btn">
+                <button type="button">Update progress</button>
+              </div>
+
             </div>
 
           </div>
