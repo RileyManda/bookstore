@@ -3,7 +3,7 @@
   --white-three: #e8e8e8;
   --blue-theme: #0290ff;
   --nav-menu-theme: #121212;
-  --background-color-theme: #fafafa;
+  --background-color-theme: rgba(0, 0, 0, 0.05);
   --content-color: #4386bf;
   --dark-color-theme: #121212;
   --grey-color-theme: #bdbdbd;
@@ -19,6 +19,7 @@
   width: 100%;
   padding: 0;
   margin: 0;
+  background-color: var(--background-color-theme);
 }
 
 /* nav bar */
@@ -125,7 +126,6 @@
   display: flex;
   justify-content: center;
   margin-left: 20px;
-  background-color: var(--background-color-theme);
 }
 
 /* card */
@@ -198,28 +198,30 @@
 .app-form {
   display: flex;
   flex: 1;
+  margin-bottom: 20px;
 }
 
 .app-form input {
   width: 40%;
-  height: 2rem;
-  border-radius: 4px;
-  border: solid 1px var(--dark-color-theme);
-  background-color: var(--white-two);
-  margin-right: 8px;
+  height: 2.5rem;
+  border-radius: 2px;
+  border: solid 1px var(--white-three);
+  background-color: var(--white-background-theme);
+  margin-right: 12px;
 }
 
 .app-form select {
-  width: 20%;
-  height: 2rem;
-  border-radius: 4px;
-  border: solid 1px var(--dark-color-theme);
-  background-color: var(--white-two);
+  width: 30%;
+  height: 2.7rem;
+  border-radius: 2px;
+  border: solid 1px var(--white-three);
+  background-color: var(--white-background-theme);
   margin-right: 8px;
 }
 
 .add-btn {
   flex: 1;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -227,7 +229,7 @@
 }
 
 .add-btn button {
-  width: 40%;
+  width: 60%;
   height: 2.063rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
@@ -329,9 +331,9 @@
 }
 
 .vertical-center {
-  border-left: 2px solid var(--grey-color-theme);
+  border-left: 2px solid var(--white-three);
   height: 100%;
-  margin-left: 90px;
+  margin-left: -50px;
 }
 
 .card-actions-center .vertical-center {
@@ -348,4 +350,8 @@
   flex-direction: column;
   align-items: center;
   margin-left: 20px;
+}
+
+.progress-detail .completed {
+  color: var(--grey-color-theme);
 }

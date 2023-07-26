@@ -59,13 +59,13 @@ const BooksComponent = () => {
                   {percentage}
                   %
                 </p>
-                <p>Completed</p>
+                <p className="completed">Completed</p>
               </div>
-              <div className="vertical-center" />
             </div>
+            <div className="vertical-center" />
             <div className="card-actions-right">
               <p>Current Chapter</p>
-              <p>Chapter 17</p>
+              <p>Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
                 <button type="button">Update progress</button>
               </div>
