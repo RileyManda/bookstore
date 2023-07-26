@@ -144,7 +144,6 @@
 .book-item {
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -198,7 +197,17 @@
   color: var(--white-theme);
 }
 
-.remove-btn {
-  background-color: rgb(194, 190, 190);
+.remove-btn button {
+  width: 11.5rem;
+  height: 2.063rem;
+  margin: 0.75rem 0 0.563rem 3.688rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
   color: var(--white-background-theme);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  background-color: var(--blue-theme);
 }
