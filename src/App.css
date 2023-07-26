@@ -73,6 +73,14 @@
   margin-bottom: 10px;
 }
 
+.book-list {
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+
 .book-title {
   flex-grow: 1;
   text-align: left;
@@ -89,6 +97,14 @@
 
 .author {
   color: black;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.category {
+  color: black;
+  align-items: center;
+  margin-right: 12px;
 }
 
 .add-btn {

@@ -1,13 +1,15 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { removeBook } from '../redux/books/booksSlice';
+import { removeBook, fetchBooks } from '../api/middleware';
 
 const RemoveBookButton = ({ bookId }) => {
   const dispatch = useDispatch();
 
   const handleRemoveBook = () => {
-    dispatch(removeBook(bookId));
+    dispatch(removeBook(bookId)).then(() => {
+      dispatch(fetchBooks()); // Fetch the latest data after removing the book
+    });
   };
 
   return (
