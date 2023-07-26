@@ -45,7 +45,13 @@ function Nav({ routes }) {
 
 export const Logo = () => <div className="logo">Bookstore CMS</div>;
 
-export const PersonIcon = () => <div className="person-icon">Person Icon</div>;
+export const PersonIcon = () => (
+  <div className="person-icon">
+    <div className="oval">
+      <div className="mask" />
+    </div>
+  </div>
+);
 
 Nav.propTypes = {
   routes: PropTypes.arrayOf(
