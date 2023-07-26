@@ -15,9 +15,11 @@ const RemoveBookButton = ({ bookId }) => {
   return (
     <div className="action-button-group">
       <button type="button">Comments</button>
+      <div className="vl" />
       <button type="button" onClick={handleRemoveBook}>
         Remove Book
       </button>
+      <div className="vl" />
       <button type="button">Edit</button>
     </div>
   );

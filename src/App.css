@@ -4,7 +4,7 @@
   --blue-theme: #0290ff;
   --nav-menu-theme: #121212;
   --background-color-theme: #fafafa;
-  --author-color: #4386bf;
+  --content-color: #4386bf;
   --dark-color-theme: #121212;
 }
 
@@ -42,7 +42,7 @@
 .logo {
   width: 15rem;
   height: 2.313rem;
-  margin: 0.375rem 2.938rem 0.125rem 0;
+  margin: 0.375rem 2.938rem 0.125rem 2rem;
   font-size: 1.875rem;
   font-weight: bold;
   font-stretch: normal;
@@ -194,7 +194,7 @@
 }
 
 .author {
-  color: var(--author-color);
+  color: var(--content-color);
   align-items: center;
   margin-right: 12px;
 }
@@ -245,15 +245,37 @@
 
 .action-button-group {
   display: flex;
+  margin-left: -5px;
+}
+
+.action-button-group button {
+  display: flex;
   flex-direction: row;
+  align-items: center;
   background: none;
   border: none;
-  color: var(--dark-color-theme);
+  color: var(--content-color);
   text-align: center;
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  float: left;
+  margin: 0;
+  padding-right: 12px;
+  position: relative;
+}
+
+.action-button-group button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-left: 2px solid var(--content-color);
+  height: 30px;
+}
+
+.action-button-group button:last-child::after {
+  display: none;
 }
 
 .card-actions-center {
