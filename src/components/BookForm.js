@@ -18,7 +18,7 @@ const BookForm = () => {
   };
 
   // Default author value
-  const defaultAuthor = 'John Doe';
+  const defaultAuthor = 'JohnDoe';
 
   const categoryOptions = [
     'Fantasy',
