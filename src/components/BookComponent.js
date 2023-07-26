@@ -29,16 +29,17 @@ const BooksComponent = () => {
     return <div>Loading...</div>;
   }
 
+  const percentages = [64, 8, 0];
+
   return (
     <div className="book-container">
-
       {bookIds.map((bookId, index) => {
         const bookArray = books[bookId];
         if (!Array.isArray(bookArray) || bookArray.length === 0) {
           return null;
         }
         const bookItem = bookArray[0];
-        const percentage = 66;
+        const percentage = percentages[index] || 0;
         return (
           <div key={bookItem.item_id || index} className="book-item">
             <div className="card-left">
@@ -52,7 +53,6 @@ const BooksComponent = () => {
             <div className="card-actions-center">
               <div className="circular-progress">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
-                ;
               </div>
               <div className="progress-detail">
                 <p>
@@ -74,7 +74,6 @@ const BooksComponent = () => {
         );
       })}
     </div>
-
   );
 };
 
