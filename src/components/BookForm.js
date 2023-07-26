@@ -3,25 +3,28 @@ import AddBookButton from './AddBookButton';
 
 const BookForm = () => {
   const [bookTitle, setBookTitle] = useState('');
-  const [bookAuthor, setBookAuthor] = useState('');
+  const [bookCategory, setBookCategory] = useState('');
 
   const handleChangeTitle = (e) => {
     setBookTitle(e.target.value);
   };
 
-  const handleChangeAuthor = (e) => {
-    setBookAuthor(e.target.value);
+  const handleChangeCategory = (e) => {
+    setBookCategory(e.target.value);
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
   };
 
-  const authorOptions = [
-    'John Smith',
-    'Leo Tolstoy',
-    'Richard Dawkins',
-    'Default Author',
+  // Default author value
+  const defaultAuthor = 'John Doe';
+
+  const categoryOptions = [
+    'Fantasy',
+    'Science-Fiction',
+    'Information Technology',
+    'Business',
   ];
 
   return (
@@ -29,19 +32,23 @@ const BookForm = () => {
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
-          placeholder="Book Title"
+          placeholder="Title"
           value={bookTitle}
           onChange={handleChangeTitle}
         />
-        <select value={bookAuthor} onChange={handleChangeAuthor}>
-          <option value="">Action</option>
-          {authorOptions.map((author) => (
-            <option key={author} value={author}>
-              {author}
+        <select value={bookCategory} onChange={handleChangeCategory}>
+          <option value="">Category</option>
+          {categoryOptions.map((category) => (
+            <option key={category} value={category}>
+              {category}
             </option>
           ))}
         </select>
-        <AddBookButton bookTitle={bookTitle} bookAuthor={bookAuthor} />
+        <AddBookButton
+          bookTitle={bookTitle}
+          bookAuthor={defaultAuthor}
+          bookCategory={bookCategory}
+        />
       </form>
     </div>
   );
