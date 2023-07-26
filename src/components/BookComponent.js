@@ -10,10 +10,15 @@ const BooksComponent = () => {
   const [bookIds, setBookIds] = useState([]);
 
   useEffect(() => {
-    dispatch(fetchBooks()).then((action) => {
-      const ids = Object.keys(action.payload);
-      setBookIds(ids);
-    });
+    dispatch(fetchBooks())
+      .then((action) => {
+        const ids = Object.keys(action.payload);
+        setBookIds(ids);
+        console.log('Books fetched successfully:', action.payload);
+      })
+      .catch((error) => {
+        console.log('Error fetching books:', error.message);
+      });
   }, [dispatch]);
 
   if (isLoading) {
@@ -23,7 +28,6 @@ const BooksComponent = () => {
   if (!books || Object.keys(books).length === 0) {
     return <div>No books available</div>;
   }
-
   return (
     <ul className="Book">
       {bookIds.map((bookId) => {

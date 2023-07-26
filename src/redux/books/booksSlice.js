@@ -13,9 +13,7 @@ export const booksSlice = createSlice({
   reducers: {
     removeBook: (state, action) => {
       const bookId = action.payload;
-      const newBooks = { ...state.books };
-      delete newBooks[bookId];
-      state.books = newBooks;
+      state.books = state.books.filter((book) => book.item_id !== bookId);
     },
   },
   extraReducers: (builder) => {
@@ -31,16 +29,15 @@ export const booksSlice = createSlice({
       state.isLoading = false;
       state.error = action.payload;
     });
-    builder.addCase(addBook.pending, (state) => {
-      state.isLoading = true;
-    });
     builder.addCase(addBook.fulfilled, (state, action) => {
       state.isLoading = false;
       const addedBook = action.payload;
-
-      state.books[addedBook.item_id] = [addedBook];
+      state.books[addedBook.item_id] = addedBook;
     });
 
+    builder.addCase(addBook.pending, (state) => {
+      state.isLoading = true;
+    });
     builder.addCase(addBook.rejected, (state, action) => {
       state.isLoading = false;
       state.error = action.payload;
