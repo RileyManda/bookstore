@@ -28,7 +28,8 @@ const BooksComponent = () => {
   }
 
   return (
-    <div>
+    <div className="book-container">
+
       {bookIds.map((bookId, index) => {
         const bookArray = books[bookId];
         if (!Array.isArray(bookArray) || bookArray.length === 0) {
@@ -45,6 +46,7 @@ const BooksComponent = () => {
         );
       })}
     </div>
+
   );
 };
 

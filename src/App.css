@@ -1,24 +1,28 @@
 :root {
-  --background-theme: #fff;
+  --white-background-theme: #fff;
   --white-three: #e8e8e8;
   --blue-theme: #0290ff;
+  --nav-menu-theme: #121212;
 }
 
+/* font */
 .font-loader {
   font-family: 'Montserrat', sans-serif;
 }
 
+/* app */
 .App {
   width: 100%;
   padding: 0;
   margin: 0;
 }
 
+/* nav bar */
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: var(--background-theme);
+  background-color: var(--white-background-theme);
   padding: 16px;
 }
 
@@ -78,11 +82,11 @@
   font-style: normal;
   line-height: normal;
   letter-spacing: 1.9px;
-  color: #121212;
+  color: var(--nav-menu-theme);
 }
 
 .nav-menu a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .person-icon {
@@ -109,21 +113,48 @@
   transform: translate(-50%, -50%);
 }
 
+/* nav menu END */
+
+/* main container */
+
 .container {
   display: flex;
   justify-content: center;
   margin-left: 20px;
 }
 
+/* card */
+
+.book-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
 .books {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-left: 20px;
+  width: 100%;
 }
 
 .book-item {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 10px;
+  background-color: var(--white-color);
+  border-radius: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-top: 4px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  height: 130px;
 }
 
 .book-list {
@@ -149,22 +180,22 @@
 }
 
 .author {
-  color: black;
+  color: var(--color-black);
   align-items: center;
   margin-right: 12px;
 }
 
 .category {
-  color: black;
+  color: var(--color-black);
   align-items: center;
   margin-right: 12px;
 }
 
 .add-btn {
-  color: #fff;
+  color: var(--white-theme);
 }
 
 .remove-btn {
   background-color: rgb(194, 190, 190);
-  color: #fff;
+  color: var(--white-background-theme);
 }
