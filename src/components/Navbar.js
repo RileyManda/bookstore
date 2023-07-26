@@ -43,13 +43,9 @@ function Nav({ routes }) {
   );
 }
 
-function Logo() {
-  return <div className="logo">Bookstore CMS</div>;
-}
+export const Logo = () => <div className="logo">Bookstore CMS</div>;
 
-function PersonIcon() {
-  return <div className="person-icon">Person Icon</div>;
-}
+export const PersonIcon = () => <div className="person-icon">Person Icon</div>;
 
 Nav.propTypes = {
   routes: PropTypes.arrayOf(

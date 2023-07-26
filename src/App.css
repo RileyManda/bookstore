@@ -1,14 +1,19 @@
+:root {
+  --background-theme: #fff;
+}
+
 .App {
   width: 100%;
   padding: 0;
   margin: 0;
+  font-family: Montserrat;
 }
 
 .navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f0f0f0;
+  background-color: var(--background-theme);
   padding: 16px;
 }
 
@@ -23,8 +28,16 @@
 }
 
 .logo {
-  font-size: 30px;
-  margin-right: 30px;
+  width: 15rem;
+  height: 2.313rem;
+  margin: 0.375rem 2.938rem 0.125rem 0;
+  font-size: 1.875rem;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
 }
 
 .user-icon {

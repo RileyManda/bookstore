@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { addBook, fetchBooks } from '../api/middleware'; // Import fetchBooks
+import { addBook, fetchBooks } from '../api/middleware';
 
 const AddBookButton = ({ bookTitle, bookAuthor, bookCategory }) => {
   const dispatch = useDispatch();
