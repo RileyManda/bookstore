@@ -55,7 +55,7 @@ const BooksComponent = () => {
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
               </div>
               <div className="progress-detail">
-                <p>
+                <p className="percentage">
                   {percentage}
                   %
                 </p>
