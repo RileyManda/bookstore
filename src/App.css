@@ -337,3 +337,15 @@
 .card-actions-center .vertical-center {
   margin-top: 10px;
 }
+
+.circular-progress {
+  width: 150px;
+  height: 150px;
+}
+
+.progress-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px;
+}

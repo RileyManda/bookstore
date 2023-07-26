@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { CircularProgressbar } from 'react-circular-progressbar';
 import { fetchBooks } from '../api/middleware';
 import RemoveBookButton from './RemoveBookButton';
+import 'react-circular-progressbar/dist/styles.css';
 
 const BooksComponent = () => {
   const dispatch = useDispatch();
@@ -36,6 +38,7 @@ const BooksComponent = () => {
           return null;
         }
         const bookItem = bookArray[0];
+        const percentage = 66;
         return (
           <div key={bookItem.item_id || index} className="book-item">
             <div className="card-left">
@@ -47,7 +50,17 @@ const BooksComponent = () => {
               </div>
             </div>
             <div className="card-actions-center">
-              Progress dialog
+              <div className="circular-progress">
+                <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                ;
+              </div>
+              <div className="progress-detail">
+                <p>
+                  {percentage}
+                  %
+                </p>
+                <p>Completed</p>
+              </div>
               <div className="vertical-center" />
             </div>
             <div className="card-actions-right">
