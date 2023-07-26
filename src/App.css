@@ -97,6 +97,14 @@
 
 .author {
   color: black;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.category {
+  color: black;
+  align-items: center;
+  margin-right: 12px;
 }
 
 .add-btn {

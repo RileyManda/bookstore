@@ -18,6 +18,11 @@ const BooksComponent = () => {
       .catch((error) => error);
   }, [dispatch]);
 
+  useEffect(() => {
+    const ids = Object.keys(books);
+    setBookIds(ids);
+  }, [books]);
+
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -33,7 +38,7 @@ const BooksComponent = () => {
         return (
           <div key={bookItem.item_id || index} className="book-item">
             <h3 className="book-title">{bookItem.title}</h3>
-            <p className="Author">{bookItem.author}</p>
+            <p className="author">{bookItem.author}</p>
             <p className="category">{bookItem.category}</p>
             <RemoveBookButton bookId={bookId} />
           </div>

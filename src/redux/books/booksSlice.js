@@ -2,7 +2,7 @@ import { createSlice } from '@reduxjs/toolkit';
 import { fetchBooks, addBook, removeBook } from '../../api/middleware';
 
 const initialState = {
-  books: [],
+  books: {},
   isLoading: false,
   error: undefined,
 };
@@ -13,10 +13,13 @@ export const booksSlice = createSlice({
   reducers: {
     removeBook: (state, action) => {
       const bookId = action.payload;
-      state.books = state.books.filter((book) => book.item_id !== bookId);
+      const newBooks = { ...state.books };
+      delete newBooks[bookId];
+      state.books = newBooks;
     },
     addBook: (state, action) => {
-      state.push(action.payload);
+      const newBook = action.payload;
+      state.books[newBook.item_id] = newBook;
     },
   },
   extraReducers: (builder) => {
