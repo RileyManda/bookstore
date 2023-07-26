@@ -26,7 +26,6 @@ export const booksSlice = createSlice({
     builder.addCase(fetchBooks.fulfilled, (state, action) => {
       state.isLoading = false;
       state.books = action.payload;
-      console.log('Updated books state after fetchBooks:', state.books);
     });
     builder.addCase(fetchBooks.rejected, (state, action) => {
       state.isLoading = false;

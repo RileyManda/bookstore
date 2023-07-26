@@ -14,11 +14,8 @@ const BooksComponent = () => {
       .then((action) => {
         const ids = Object.keys(action.payload);
         setBookIds(ids);
-        console.log('Books fetched successfully:', action.payload);
       })
-      .catch((error) => {
-        console.log('Error fetching books:', error.message);
-      });
+      .catch((error) => error);
   }, [dispatch]);
 
   if (isLoading) {
