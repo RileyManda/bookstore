@@ -2,11 +2,14 @@
   --background-theme: #fff;
 }
 
+.font-loader {
+  font-family: 'Montserrat', sans-serif;
+}
+
 .App {
   width: 100%;
   padding: 0;
   margin: 0;
-  font-family: Montserrat;
 }
 
 .navbar {
