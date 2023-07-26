@@ -32,12 +32,12 @@ const BookForm = () => {
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
-          placeholder="Book Title"
+          placeholder="Title"
           value={bookTitle}
           onChange={handleChangeTitle}
         />
         <select value={bookCategory} onChange={handleChangeCategory}>
-          <option value="">Select Category</option>
+          <option value="">Category</option>
           {categoryOptions.map((category) => (
             <option key={category} value={category}>
               {category}

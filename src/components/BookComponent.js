@@ -25,27 +25,24 @@ const BooksComponent = () => {
     return <div>Loading...</div>;
   }
 
-  if (!books || Object.keys(books).length === 0) {
-    return <div>No books available</div>;
-  }
   return (
-    <ul className="Book">
-      {bookIds.map((bookId) => {
+    <div>
+      {bookIds.map((bookId, index) => {
         const bookArray = books[bookId];
         if (!Array.isArray(bookArray) || bookArray.length === 0) {
           return null;
         }
-        const book = bookArray[0];
+        const bookItem = bookArray[0];
         return (
-          <li key={book.item_id} className="book-item">
-            <h3 className="book-title">{book.title}</h3>
-            <p className="Author">{book.author}</p>
-            <p className="category">{book.category}</p>
+          <div key={bookItem.item_id || index} className="book-item">
+            <h3 className="book-title">{bookItem.title}</h3>
+            <p className="Author">{bookItem.author}</p>
+            <p className="category">{bookItem.category}</p>
             <RemoveBookButton bookId={bookId} />
-          </li>
+          </div>
         );
       })}
-    </ul>
+    </div>
   );
 };
 

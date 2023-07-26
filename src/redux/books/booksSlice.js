@@ -15,6 +15,9 @@ export const booksSlice = createSlice({
       const bookId = action.payload;
       state.books = state.books.filter((book) => book.item_id !== bookId);
     },
+    addBook: (state, action) => {
+      state.push(action.payload);
+    },
   },
   extraReducers: (builder) => {
     builder.addCase(fetchBooks.pending, (state) => {
@@ -51,7 +54,6 @@ export const booksSlice = createSlice({
       const newBooks = { ...state.books };
       delete newBooks[bookIdToDelete];
       state.books = newBooks;
-      console.log('Updated books state after removeBook:', state.books);
     });
 
     builder.addCase(removeBook.rejected, (state, action) => {
