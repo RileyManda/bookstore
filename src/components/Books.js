@@ -6,6 +6,7 @@ import Book from './BookComponent';
 const Books = () => (
   <div className="books">
     <Book />
+    <div className="hl" />
     <BookForm />
   </div>
 );

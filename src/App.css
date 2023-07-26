@@ -6,6 +6,7 @@
   --background-color-theme: #fafafa;
   --content-color: #4386bf;
   --dark-color-theme: #121212;
+  --grey-color-theme: #bdbdbd;
 }
 
 /* font */
@@ -185,12 +186,57 @@
   align-items: center;
 }
 
+/* form  */
+
 .form-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-top: 20px;
-  margin-right: 92px;
+}
+
+.app-form {
+  display: flex;
+  flex: 1;
+}
+
+.app-form input {
+  width: 40%;
+  height: 2rem;
+  border-radius: 4px;
+  border: solid 1px var(--dark-color-theme);
+  background-color: var(--white-two);
+  margin-right: 8px;
+}
+
+.app-form select {
+  width: 20%;
+  height: 2rem;
+  border-radius: 4px;
+  border: solid 1px var(--dark-color-theme);
+  background-color: var(--white-two);
+  margin-right: 8px;
+}
+
+.add-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: 12px;
+}
+
+.add-btn button {
+  width: 40%;
+  height: 2.063rem;
+  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  border-radius: 3px;
+  border: none;
+  color: var(--white-background-theme);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  background-color: var(--blue-theme);
 }
 
 .author {
@@ -205,10 +251,7 @@
   margin-right: 12px;
 }
 
-.add-btn {
-  color: var(--white-theme);
-}
-
+/* card actions */
 .remove-btn button {
   background: none;
   border: none;
@@ -233,7 +276,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-right: 13px;
+  margin-right: 0;
 }
 
 .card-actions-left {
@@ -280,7 +323,17 @@
 
 .card-actions-center {
   display: flex;
-  flex-direction: column;
   align-items: center;
   margin-right: 92px;
+  flex-direction: row;
+}
+
+.vertical-center {
+  border-left: 2px solid var(--grey-color-theme);
+  height: 100%;
+  margin-left: 90px;
+}
+
+.card-actions-center .vertical-center {
+  margin-top: 10px;
 }

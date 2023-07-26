@@ -48,6 +48,7 @@ const BooksComponent = () => {
             </div>
             <div className="card-actions-center">
               Progress dialog
+              <div className="vertical-center" />
             </div>
             <div className="card-actions-right">
               <p>Current Chapter</p>
