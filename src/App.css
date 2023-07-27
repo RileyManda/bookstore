@@ -9,6 +9,7 @@
   --dark-color-theme: #121212;
   --grey-color-theme: #bdbdbd;
   --white-two: #f2f2f2;
+  --grey-add-book: #888;
 }
 
 /* global classes */
@@ -190,7 +191,6 @@
   flex-grow: 1;
   text-align: left;
   margin-right: 12px;
-  width: 12.313rem;
   height: 1.813rem;
   font-size: 1.375rem;
   font-weight: bold;
@@ -199,6 +199,7 @@
   line-height: normal;
   letter-spacing: -0.2px;
   color: var(--color-black);
+  width: fit-content;
 }
 
 /* form  */
@@ -210,8 +211,8 @@
 .add-new-book-text {
   font-size: 1.2rem;
   font-weight: bold;
-  margin-bottom: 10px;
-  order: -1;
+  color: var(--grey-add-book);
+  letter-spacing: -0.18px;
 }
 
 .app-form {
@@ -316,6 +317,7 @@ select.white-border.no-outline option[disabled]:first-child {
   cursor: pointer;
   padding-right: 12px;
   position: relative;
+  top: 30px;
 }
 
 .action-button-group p {
@@ -329,7 +331,7 @@ select.white-border.no-outline option[disabled]:first-child {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  border-left: 2px solid var(--grey-color-theme);
+  border-left: 1px solid var(--grey-color-theme);
   height: 30px;
 }
 
