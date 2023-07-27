@@ -32,19 +32,20 @@ const BookForm = () => {
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
-          placeholder="Title"
+          placeholder="Book title"
           value={bookTitle}
           onChange={handleChangeTitle}
           className="white-border no-outline"
         />
         <select value={bookCategory} onChange={handleChangeCategory} className="white-border no-outline">
-          <option value="">Category</option>
+          <option value="" disabled hidden>Category</option>
           {categoryOptions.map((category) => (
             <option key={category} value={category}>
               {category}
             </option>
           ))}
         </select>
+
         <AddBookButton
           bookTitle={bookTitle}
           bookAuthor={defaultAuthor}

@@ -14,13 +14,13 @@ const RemoveBookButton = ({ bookId }) => {
 
   return (
     <div className="action-button-group flex-container flex-row">
-      <button type="button" className="zero-border">Comments</button>
+      <button type="button" className="zero-border"><p className="comments">Comments</p></button>
       <div className="vl" />
       <button type="button" className="zero-border" onClick={handleRemoveBook}>
-        Remove Book
+        <p>Remove Book</p>
       </button>
       <div className="vl" />
-      <button type="button" className="zero-border">Edit</button>
+      <button type="button" className="zero-border"><p>Edit</p></button>
     </div>
   );
 };

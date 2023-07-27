@@ -41,7 +41,7 @@ const BooksComponent = () => {
         const bookItem = bookArray[0];
         const percentage = percentages[index] || 0;
         return (
-          <div key={bookItem.item_id || index} className="book-item flex-container flex-row white-background white-border">
+          <div key={bookItem.item_id || index} className="book-item flex-container flex-row white-background">
             <div className="card-left">
               <p className="category">{bookItem.category}</p>
               <h3 className="book-title center-align-items">{bookItem.title}</h3>
@@ -63,9 +63,10 @@ const BooksComponent = () => {
               </div>
             </div>
             <div className="vertical-center" />
-            <div className="card-actions-right flex-container flex-column center-align-items">
-              <p>Current Chapter</p>
-              <p>Chapter 3: &quot;A Lesson Learned&quot;</p>
+            <div className="card-actions-right flex-container flex-column">
+
+              <p className="chapter">CURRENT CHAPTER</p>
+              <p className="chapter-detail">Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
                 <button type="button" className="zero-border">Update progress</button>
               </div>
