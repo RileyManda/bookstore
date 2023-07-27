@@ -19,7 +19,7 @@ const routes = [
 
 function Navbar() {
   return (
-    <nav className="navbar white-background">
+    <nav className="navbar white-background flex-container">
       <div className="flex-container center-align-items">
         <Logo />
         <Nav routes={routes} />

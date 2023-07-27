@@ -329,7 +329,7 @@ select.white-border.no-outline option[disabled]:first-child {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
-  border-left: 2px solid var(--content-color);
+  border-left: 2px solid var(--grey-color-theme);
   height: 30px;
 }
 
@@ -398,4 +398,8 @@ select.white-border.no-outline option[disabled]:first-child {
   line-height: normal;
   letter-spacing: normal;
   color: var(--dark-color-theme);
+}
+
+.vl {
+  background-color: var(--white-three);
 }
