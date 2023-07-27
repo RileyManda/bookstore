@@ -35,7 +35,7 @@ const BookForm = () => {
           placeholder="Book title"
           value={bookTitle}
           onChange={handleChangeTitle}
-          className="white-border no-outline"
+          className="white-border no-outline font-face-montserrat"
         />
         <select value={bookCategory} onChange={handleChangeCategory} className="white-border no-outline">
           <option value="" disabled hidden>Category</option>

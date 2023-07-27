@@ -45,7 +45,7 @@ const BooksComponent = () => {
             <div className="card-left">
               <p className="category">{bookItem.category}</p>
               <h3 className="book-title center-align-items">{bookItem.title}</h3>
-              <p className="author center-align-items">{bookItem.author}</p>
+              <p className="author center-align-items font-face-montserrat">{bookItem.author}</p>
               <div className="card-actions-left flex-container flex-row center-align-items">
                 <RemoveBookButton bookId={bookId} />
               </div>
@@ -63,12 +63,12 @@ const BooksComponent = () => {
               </div>
             </div>
             <div className="vertical-center" />
-            <div className="card-actions-right flex-container flex-column">
+            <div className="card-actions-right flex-container flex-column font-face-robotoslab">
 
-              <p className="chapter">CURRENT CHAPTER</p>
-              <p className="chapter-detail">Chapter 3: &quot;A Lesson Learned&quot;</p>
+              <p className="chapter font-face-robotoslab">CURRENT CHAPTER</p>
+              <p className="chapter-detail font-face-robotoslab">Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
-                <button type="button" className="zero-border">Update progress</button>
+                <button type="button" className="zero-border font-face-robotoslab">UPDATE PROGRESS</button>
               </div>
             </div>
           </div>
