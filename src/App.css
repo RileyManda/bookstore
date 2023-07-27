@@ -207,6 +207,7 @@
   border: solid 1px var(--white-three);
   background-color: var(--white-background-theme);
   margin-right: 12px;
+  outline: none;
 }
 
 .app-form select {
