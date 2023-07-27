@@ -28,7 +28,7 @@ const BookForm = () => {
   ];
 
   return (
-    <div className="form-wrapper flex-row center-align-items">
+    <div className="form-wrapper flex-container flex-row center-align-items">
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"

@@ -13,7 +13,7 @@ const RemoveBookButton = ({ bookId }) => {
   };
 
   return (
-    <div className="action-button-group flex-row">
+    <div className="action-button-group flex-container flex-row">
       <button type="button">Comments</button>
       <div className="vl" />
       <button type="button" onClick={handleRemoveBook}>
