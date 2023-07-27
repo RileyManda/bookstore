@@ -142,13 +142,9 @@
 
 .book-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
 }
 
 .books {
-  display: flex;
-  flex-direction: column;
   margin-right: 20px;
   margin-left: 20px;
   width: 100%;
@@ -156,7 +152,6 @@
 
 .book-item {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -170,14 +165,6 @@
   padding: 2rem 9.188rem 1.625rem 1.688rem;
   border: solid 1px var(--white-three);
   background-color: var(--white-background-theme);
-}
-
-.book-list {
-  display: flex;
-  list-style: none;
-  flex-direction: row;
-  padding: 0;
-  margin: 0;
 }
 
 .book-title {
@@ -198,8 +185,6 @@
 /* form  */
 
 .form-wrapper {
-  display: flex;
-  flex-direction: row;
   margin-top: 20px;
 }
 
@@ -280,25 +265,18 @@
 }
 
 .card-actions-right {
-  display: flex;
-  flex-direction: column;
   margin-right: 0;
 }
 
 .card-actions-left {
-  display: flex;
-  flex-direction: row;
   margin-right: 92px;
 }
 
 .action-button-group {
-  display: flex;
   margin-left: -5px;
 }
 
 .action-button-group button {
-  display: flex;
-  flex-direction: row;
   background: none;
   border: none;
   color: var(--content-color);
@@ -346,8 +324,6 @@
 }
 
 .progress-detail {
-  display: flex;
-  flex-direction: column;
   margin-left: 20px;
 }
 

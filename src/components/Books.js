@@ -4,7 +4,7 @@ import BookForm from './BookForm';
 import Book from './BookComponent';
 
 const Books = () => (
-  <div className="books">
+  <div className="books flex-column">
     <Book />
     <div className="hl" />
     <BookForm />

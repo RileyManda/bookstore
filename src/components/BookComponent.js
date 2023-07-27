@@ -32,7 +32,7 @@ const BooksComponent = () => {
   const percentages = [64, 8, 0];
 
   return (
-    <div className="book-container">
+    <div className="book-container flex-column">
       {bookIds.map((bookId, index) => {
         const bookArray = books[bookId];
         if (!Array.isArray(bookArray) || bookArray.length === 0) {
@@ -41,12 +41,12 @@ const BooksComponent = () => {
         const bookItem = bookArray[0];
         const percentage = percentages[index] || 0;
         return (
-          <div key={bookItem.item_id || index} className="book-item">
+          <div key={bookItem.item_id || index} className="book-item flex-row">
             <div className="card-left">
               <p className="category">{bookItem.category}</p>
               <h3 className="book-title center-align-items">{bookItem.title}</h3>
               <p className="author center-align-items">{bookItem.author}</p>
-              <div className="card-actions-left center-align-items">
+              <div className="card-actions-left flex-row center-align-items">
                 <RemoveBookButton bookId={bookId} />
               </div>
             </div>
@@ -54,7 +54,7 @@ const BooksComponent = () => {
               <div className="circular-progress">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
               </div>
-              <div className="progress-detail center-align-items">
+              <div className="progress-detail flex-column center-align-items">
                 <p className="percentage">
                   {percentage}
                   %
@@ -63,7 +63,7 @@ const BooksComponent = () => {
               </div>
             </div>
             <div className="vertical-center" />
-            <div className="card-actions-right center-align-items">
+            <div className="card-actions-right flex-column center-align-items">
               <p>Current Chapter</p>
               <p>Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
