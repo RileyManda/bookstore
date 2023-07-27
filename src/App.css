@@ -178,7 +178,7 @@
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  height: 10.625rem;
+  height: 9.625rem;
   margin-right: 4px;
   margin-left: 4px;
   margin-top: 4px;
@@ -209,10 +209,11 @@
 }
 
 .add-new-book-text {
-  font-size: 1.2rem;
+  font-size: 16px;
   font-weight: bold;
   color: var(--grey-add-book);
   letter-spacing: -0.18px;
+  margin-left: 10px;
 }
 
 .app-form {
@@ -317,7 +318,7 @@ select.white-border.no-outline option[disabled]:first-child {
   cursor: pointer;
   padding-right: 12px;
   position: relative;
-  top: 30px;
+  top: 10px;
 }
 
 .action-button-group p {
