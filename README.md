@@ -164,7 +164,7 @@ You can deploy this project using:
 👤 **RileyManda**
 
 - GitHub: [@RileyManda](https://github.com/RileyManda)
-- Twitter: [@rilecodez](https://twitter.com/rilecodez)
+- Twitter: [@rilecodez](https://twitter.com/rileycodez)
 - LinkedIn: [rileymanda](https://www.linkedin.com/in/rileymanda/)
 
 
