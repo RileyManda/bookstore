@@ -44,7 +44,7 @@ const BooksComponent = () => {
           <div key={bookItem.item_id || index} className="book-item">
             <div className="card-left">
               <p className="category">{bookItem.category}</p>
-              <h3 className="book-title">{bookItem.title}</h3>
+              <h3 className="book-title center-align-items">{bookItem.title}</h3>
               <p className="author">{bookItem.author}</p>
               <div className="card-actions-left">
                 <RemoveBookButton bookId={bookId} />

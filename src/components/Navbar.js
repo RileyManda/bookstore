@@ -20,7 +20,7 @@ const routes = [
 function Navbar() {
   return (
     <nav className="navbar">
-      <div className="navbar-left">
+      <div className="navbar-left center-align-items">
         <Logo />
         <Nav routes={routes} />
       </div>

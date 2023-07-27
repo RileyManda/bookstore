@@ -1,3 +1,19 @@
+/* global classes */
+.center-align-items {
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Colors */
 :root {
   --white-background-theme: #fff;
   --white-three: #e8e8e8;
@@ -25,7 +41,6 @@
 /* nav bar */
 .navbar {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   background-color: var(--white-background-theme);
   padding: 16px;
@@ -33,12 +48,10 @@
 
 .navbar-left {
   display: flex;
-  align-items: center;
 }
 
 .navbar-right {
   display: flex;
-  align-items: center;
 }
 
 .logo {
@@ -92,10 +105,6 @@
 
 .nav-menu a:hover {
   text-decoration: none;
-}
-
-.person-icon {
-  align-items: center;
 }
 
 .oval {
@@ -184,7 +193,6 @@
   line-height: normal;
   letter-spacing: -0.2px;
   color: var(--color-black);
-  align-items: center;
 }
 
 /* form  */
@@ -328,7 +336,6 @@
   display: flex;
   align-items: center;
   margin-right: 92px;
-  flex-direction: row;
 }
 
 .vertical-center {
