@@ -20,7 +20,7 @@ const routes = [
 function Navbar() {
   return (
     <nav className="navbar white-background">
-      <div className="navbar-left center-align-items">
+      <div className="flex-container center-align-items">
         <Logo />
         <Nav routes={routes} />
       </div>
@@ -33,7 +33,7 @@ function Navbar() {
 
 function Nav({ routes }) {
   return (
-    <ul className="nav-menu zero-margin-padding font-face-montserrat">
+    <ul className="nav-menu zero-margin-padding font-face-montserrat flex-container">
       {routes.map((route) => (
         <li key={route.path}>
           <Link to={route.path}>{route.label}</Link>

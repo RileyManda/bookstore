@@ -72,18 +72,9 @@
 
 /* nav bar */
 .navbar {
-  display: flex;
   justify-content: space-between;
   padding: 6px;
   height: 3.5rem;
-}
-
-.navbar-left {
-  display: flex;
-}
-
-.navbar-right {
-  display: flex;
 }
 
 .logo {
@@ -104,7 +95,6 @@
 }
 
 .nav-menu {
-  display: flex;
   list-style: none;
   margin-left: 20px;
   width: 3.688rem;
@@ -268,7 +258,7 @@ select.white-border.no-outline option[disabled]:first-child {
   color: var(--white-background-theme);
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 12px;
   background-color: var(--blue-theme);
 }
 
@@ -284,7 +274,7 @@ select.white-border.no-outline option[disabled]:first-child {
   margin-right: 12px;
 }
 
-/* card actions */
+/* card and actions */
 .remove-btn button {
   background: none;
   color: var(--dark-color-theme);
