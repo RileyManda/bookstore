@@ -28,7 +28,7 @@ const BookForm = () => {
   ];
 
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper center-align-items">
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
