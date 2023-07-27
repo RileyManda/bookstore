@@ -1,3 +1,16 @@
+
+/* Colors */
+:root {
+  --white-background-theme: #fff;
+  --white-three: #e8e8e8;
+  --blue-theme: #0290ff;
+  --nav-menu-theme: #121212;
+  --background-color-theme: rgba(0, 0, 0, 0.05);
+  --content-color: #4386bf;
+  --dark-color-theme: #121212;
+  --grey-color-theme: #bdbdbd;
+}
+
 /* global classes */
 .center-align-items {
   align-items: center;
@@ -15,16 +28,12 @@
   flex-direction: column;
 }
 
-/* Colors */
-:root {
-  --white-background-theme: #fff;
-  --white-three: #e8e8e8;
-  --blue-theme: #0290ff;
-  --nav-menu-theme: #121212;
-  --background-color-theme: rgba(0, 0, 0, 0.05);
-  --content-color: #4386bf;
-  --dark-color-theme: #121212;
-  --grey-color-theme: #bdbdbd;
+.zero-margin {
+  margin: 0;
+}
+
+.zero-border {
+  border: none;
 }
 
 /* font */
@@ -227,7 +236,6 @@
   height: 2.063rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  border: none;
   color: var(--white-background-theme);
   text-align: center;
   text-decoration: none;
@@ -248,7 +256,6 @@
 /* card actions */
 .remove-btn button {
   background: none;
-  border: none;
   color: var(--dark-color-theme);
 }
 
@@ -257,7 +264,6 @@
   height: 2.063rem;
   padding: 0.438rem 1.188rem 0.5rem 1.375rem;
   border-radius: 3px;
-  border: none;
   color: var(--white-background-theme);
   text-align: center;
   text-decoration: none;
@@ -280,7 +286,6 @@
 
 .action-button-group button {
   background: none;
-  border: none;
   color: var(--content-color);
   text-align: center;
   text-decoration: none;

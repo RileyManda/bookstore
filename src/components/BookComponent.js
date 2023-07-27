@@ -67,7 +67,7 @@ const BooksComponent = () => {
               <p>Current Chapter</p>
               <p>Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
-                <button type="button">Update progress</button>
+                <button type="button" className="zero-border">Update progress</button>
               </div>
             </div>
           </div>
