@@ -231,7 +231,6 @@
   flex: 1;
   height: 2.5rem;
   display: flex;
-  align-items: center;
   justify-content: flex-end;
   margin-left: 12px;
 }
@@ -251,13 +250,11 @@
 
 .author {
   color: var(--content-color);
-  align-items: center;
   margin-right: 12px;
 }
 
 .category {
   color: var(--color-black);
-  align-items: center;
   margin-right: 12px;
 }
 
@@ -285,14 +282,12 @@
 .card-actions-right {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-right: 0;
 }
 
 .card-actions-left {
   display: flex;
   flex-direction: row;
-  align-items: center;
   margin-right: 92px;
 }
 
@@ -304,7 +299,6 @@
 .action-button-group button {
   display: flex;
   flex-direction: row;
-  align-items: center;
   background: none;
   border: none;
   color: var(--content-color);
@@ -333,7 +327,6 @@
 
 .card-actions-center {
   display: flex;
-  align-items: center;
   margin-right: 92px;
 }
 
@@ -355,7 +348,6 @@
 .progress-detail {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin-left: 20px;
 }
 

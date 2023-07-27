@@ -21,7 +21,7 @@ const AddBookButton = ({ bookTitle, bookAuthor, bookCategory }) => {
   };
 
   return (
-    <div className="add-btn">
+    <div className="add-btn center-align-items">
       <button type="button" onClick={handleAddBook}>
         Add Book
       </button>

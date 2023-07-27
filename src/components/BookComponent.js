@@ -45,16 +45,16 @@ const BooksComponent = () => {
             <div className="card-left">
               <p className="category">{bookItem.category}</p>
               <h3 className="book-title center-align-items">{bookItem.title}</h3>
-              <p className="author">{bookItem.author}</p>
-              <div className="card-actions-left">
+              <p className="author center-align-items">{bookItem.author}</p>
+              <div className="card-actions-left center-align-items">
                 <RemoveBookButton bookId={bookId} />
               </div>
             </div>
-            <div className="card-actions-center">
+            <div className="card-actions-center center-align-items">
               <div className="circular-progress">
                 <CircularProgressbar value={percentage} text={`${percentage}%`} />
               </div>
-              <div className="progress-detail">
+              <div className="progress-detail center-align-items">
                 <p className="percentage">
                   {percentage}
                   %
@@ -63,7 +63,7 @@ const BooksComponent = () => {
               </div>
             </div>
             <div className="vertical-center" />
-            <div className="card-actions-right">
+            <div className="card-actions-right center-align-items">
               <p>Current Chapter</p>
               <p>Chapter 3: &quot;A Lesson Learned&quot;</p>
               <div className="progress-btn">
