@@ -2,7 +2,7 @@ import React from 'react';
 import { v4 as uuidv4 } from 'uuid';
 import { useDispatch } from 'react-redux';
 import PropTypes from 'prop-types';
-import { addBook, fetchBooks } from '../api/middleware'; // Import fetchBooks
+import { addBook, fetchBooks } from '../api/middleware';
 
 const AddBookButton = ({ bookTitle, bookAuthor, bookCategory }) => {
   const dispatch = useDispatch();
@@ -21,9 +21,9 @@ const AddBookButton = ({ bookTitle, bookAuthor, bookCategory }) => {
   };
 
   return (
-    <div className="add-btn">
-      <button type="button" onClick={handleAddBook}>
-        Add Book
+    <div className="add-btn center-align-items">
+      <button type="button" className="zero-border font-face-robotoslab" onClick={handleAddBook}>
+        ADD BOOK
       </button>
     </div>
   );

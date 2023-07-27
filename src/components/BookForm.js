@@ -28,22 +28,24 @@ const BookForm = () => {
   ];
 
   return (
-    <div className="form-wrapper">
+    <div className="form-wrapper flex-container flex-row center-align-items">
       <form onSubmit={handleSubmit} className="app-form">
         <input
           type="text"
-          placeholder="Title"
+          placeholder="Book title"
           value={bookTitle}
           onChange={handleChangeTitle}
+          className="white-border no-outline font-face-montserrat"
         />
-        <select value={bookCategory} onChange={handleChangeCategory}>
-          <option value="">Category</option>
+        <select value={bookCategory} onChange={handleChangeCategory} className="white-border no-outline">
+          <option value="" disabled hidden>Category</option>
           {categoryOptions.map((category) => (
             <option key={category} value={category}>
               {category}
             </option>
           ))}
         </select>
+
         <AddBookButton
           bookTitle={bookTitle}
           bookAuthor={defaultAuthor}

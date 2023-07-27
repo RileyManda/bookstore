@@ -9,8 +9,10 @@ const Categories = () => {
   }, [dispatch]);
   const bookStatus = useSelector((state) => state.categories);
   return (
-    <div className="categories">
-      <h2>{ bookStatus }</h2>
+    <div className="category-container">
+      <div className="flex-container flex-column center-align-items">
+        <h2>{bookStatus}</h2>
+      </div>
     </div>
   );
 };

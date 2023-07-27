@@ -19,8 +19,8 @@ const routes = [
 
 function Navbar() {
   return (
-    <nav className="navbar">
-      <div className="navbar-left">
+    <nav className="navbar white-background flex-container">
+      <div className="flex-container center-align-items">
         <Logo />
         <Nav routes={routes} />
       </div>
@@ -33,7 +33,7 @@ function Navbar() {
 
 function Nav({ routes }) {
   return (
-    <ul className="nav-menu">
+    <ul className="nav-menu zero-margin-padding font-face-montserrat flex-container">
       {routes.map((route) => (
         <li key={route.path}>
           <Link to={route.path}>{route.label}</Link>
@@ -43,13 +43,15 @@ function Nav({ routes }) {
   );
 }
 
-function Logo() {
-  return <div className="logo">Bookstore CMS</div>;
-}
+export const Logo = () => <div className="logo">Bookstore CMS</div>;
 
-function PersonIcon() {
-  return <div className="person-icon">Person Icon</div>;
-}
+export const PersonIcon = () => (
+  <div className="person-icon">
+    <div className="oval white-border">
+      <div className="mask" />
+    </div>
+  </div>
+);
 
 Nav.propTypes = {
   routes: PropTypes.arrayOf(
