@@ -33,7 +33,7 @@ function Navbar() {
 
 function Nav({ routes }) {
   return (
-    <ul className="nav-menu">
+    <ul className="nav-menu zero-margin-padding">
       {routes.map((route) => (
         <li key={route.path}>
           <Link to={route.path}>{route.label}</Link>

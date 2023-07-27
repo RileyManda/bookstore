@@ -28,8 +28,9 @@
   flex-direction: column;
 }
 
-.zero-margin {
+.zero-margin-padding {
   margin: 0;
+  padding: 0;
 }
 
 .zero-border {
@@ -78,15 +79,9 @@
   color: var(--blue-theme);
 }
 
-.user-icon {
-  margin: 0;
-}
-
 .nav-menu {
   display: flex;
   list-style: none;
-  padding: 0;
-  margin: 0;
   margin-left: 20px;
   width: 3.688rem;
   height: 1rem;
@@ -291,7 +286,6 @@
   text-decoration: none;
   font-size: 16px;
   cursor: pointer;
-  margin: 0;
   padding-right: 12px;
   position: relative;
 }
