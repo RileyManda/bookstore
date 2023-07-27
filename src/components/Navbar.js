@@ -19,7 +19,7 @@ const routes = [
 
 function Navbar() {
   return (
-    <nav className="navbar">
+    <nav className="navbar white-background">
       <div className="navbar-left center-align-items">
         <Logo />
         <Nav routes={routes} />
@@ -47,7 +47,7 @@ export const Logo = () => <div className="logo">Bookstore CMS</div>;
 
 export const PersonIcon = () => (
   <div className="person-icon">
-    <div className="oval">
+    <div className="oval white-border">
       <div className="mask" />
     </div>
   </div>

@@ -35,8 +35,9 @@ const BookForm = () => {
           placeholder="Title"
           value={bookTitle}
           onChange={handleChangeTitle}
+          className="white-border no-outline"
         />
-        <select value={bookCategory} onChange={handleChangeCategory}>
+        <select value={bookCategory} onChange={handleChangeCategory} className="white-border no-outline">
           <option value="">Category</option>
           {categoryOptions.map((category) => (
             <option key={category} value={category}>

@@ -42,6 +42,18 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.white-background {
+  background-color: var(--white-background-theme);
+}
+
+.white-border {
+  border: solid 1px var(--white-three);
+}
+
+.no-outline {
+  outline: none;
+}
+
 /* app */
 .App {
   width: 100%;
@@ -54,8 +66,8 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--white-background-theme);
-  padding: 16px;
+  padding: 6px;
+  height: 3.5rem;
 }
 
 .navbar-left {
@@ -77,6 +89,10 @@
   line-height: normal;
   letter-spacing: normal;
   color: var(--blue-theme);
+}
+
+.person-icon {
+  padding-right: 20px;
 }
 
 .nav-menu {
@@ -118,7 +134,6 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: solid 1px var(--white-three);
 }
 
 .mask {
@@ -154,6 +169,7 @@
   margin-right: 20px;
   margin-left: 20px;
   width: 100%;
+  margin-top: 20px;
 }
 
 .book-item {
@@ -169,8 +185,6 @@
   cursor: pointer;
   transition: transform 0.3s ease;
   padding: 2rem 9.188rem 1.625rem 1.688rem;
-  border: solid 1px var(--white-three);
-  background-color: var(--white-background-theme);
 }
 
 .book-title {
@@ -204,18 +218,13 @@
   width: 40%;
   height: 2.5rem;
   border-radius: 2px;
-  border: solid 1px var(--white-three);
-  background-color: var(--white-background-theme);
   margin-right: 12px;
-  outline: none;
 }
 
 .app-form select {
   width: 30%;
   height: 2.7rem;
   border-radius: 2px;
-  border: solid 1px var(--white-three);
-  background-color: var(--white-background-theme);
   margin-right: 8px;
 }
 
