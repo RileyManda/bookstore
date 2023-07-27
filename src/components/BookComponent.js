@@ -52,7 +52,7 @@ const BooksComponent = () => {
             </div>
             <div className="card-actions-center center-align-items">
               <div className="circular-progress">
-                <CircularProgressbar value={percentage} text={`${percentage}%`} />
+                <CircularProgressbar value={percentage} />
               </div>
               <div className="progress-detail flex-container flex-column center-align-items">
                 <p className="percentage">
