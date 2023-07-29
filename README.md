@@ -38,8 +38,7 @@
 
 # 📖 Bookstore <a name="about-project"></a>
 
-Bookstore is a website for creating,updating and deleting books as well as checking your reading progress.
-
+Bookstore is a full stack website for creating, updating and deleting books as well as checking your reading progress.
 
 
 ## 🛠 Built With <a name="built-with"></a>
